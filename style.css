@@ -1,0 +1,144 @@
+:root {
+  --primary: #339BE7;
+  --secondary: #2c79af;
+  --danger: red;
+  --grey: #D9D9D9;
+  --dark: #131313;
+  --white: #D9D9D9;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2B2B2B;
+  font-family: 'Electrolize', sans-serif;
+}
+
+header {
+  text-align: center;
+  margin: 0;
+}
+
+header>div>h1 {
+  margin: 0;
+  color: var(--primary);
+}
+
+main:nth-child(2) {
+  padding: 2em;
+}
+
+.column {
+  padding: 0 1em 1em 0;
+}
+
+.agents-container {
+  width: 100dvw;
+  overflow-x: scroll;
+  display: flex;
+}
+
+.agent-card {
+  padding: .5em;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px var(--dark), 4px 4px 10px var(--primary);
+  color: white;
+  width: 45vh;
+}
+
+.agent-img {
+  padding: .5em;
+}
+
+.agent-img>div {
+  background-color: var(--white);
+  border-radius: 2px;
+}
+
+.agent-img>div>p {
+  font-size: 128px;
+}
+
+.agent-stats {
+  padding-left: .5em;
+  color: var(--primary);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dispatched {
+  border: 2px solid var(--danger);
+  box-shadow: 4px 4px 8px var(--dark), 4px 4px 10px var(--danger);
+}
+
+.agent-stats>div>p>span {
+  color: var(--white);
+}
+
+.agent-stats>div>p:nth-child(5)>span {
+  color: green;
+}
+
+.agent-stats>button {
+  margin-bottom: .25em;
+  margin-right: .25em;
+  padding: .25em;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+
+  box-shadow: 0px 6px #1d4d6f;
+  background-color: var(--primary);
+  color: var(--white);
+  font-family: 'Electrolize', sans-serif;
+  font-size: 18px;
+}
+
+.agent-stats>button:disabled {
+  filter: grayscale(85%);
+  cursor: not-allowed
+}
+
+.agent-bio {
+  margin-top: .5em;
+  padding: .5em;
+}
+
+
+
+/* UTILITIES */
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.border-inset {
+  border: 2px inset var(--dark);
+
+}
+
+#3574a0 #4f7793

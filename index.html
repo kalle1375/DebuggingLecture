@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <script src="Test/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>SpyNet</h1>
+    </div>
+  </header>
+
+  <main>
+    <!-- TODO add side-scroll -->
+    <section class="agents-container">
+
+      <!-- SECTION: Oslo agent-card -->
+      <div class="column">
+        <div id="oslo" class="agent-card">
+          <div class="d-flex ">
+            <div class="agent-img border-inset">
+              <div>
+                <p>🦧</p>
+              </div>
+            </div>
+            <div class="agent-stats">
+              <div>
+                <p>NAME: <span>Oslo</span> </p>
+                <p>AGE: <span>???</span></p>
+                <p>LOCATION: <span>USA</span></p>
+                <p>SKILLS: <span>Knives, Bo-Staff, Linguistics</span></p>
+                <p>STATUS: <span id="oslo-status">Available</span> </p>
+              </div>
+              <button onclick="dispatchOslo()" id="osloButton">DISPATCH</button>
+            </div>
+          </div>
+          <div class="border-inset agent-bio">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident veritatis eius laborum voluptatem,
+              voluptatum ex illum porro molestiae labore ut iure voluptate consectetur quod quaerat quas natus beatae.
+              Voluptas, autem.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END Oslo agent-card -->
+
+      <!-- SECTION: Xanther agent-card  -->
+      <div class="column">
+        <div class="agent-card">
+          <div class="d-flex ">
+            <div class="agent-img border-inset">
+              <div>
+                <p>🦈</p>
+              </div>
+            </div>
+            <div class="agent-stats">
+              <div>
+                <p>NAME: <span>Xanther</span> </p>
+                <p>AGE: <span>23</span></p>
+                <p>LOCATION: <span>Pacific Ocean</span></p>
+                <p>SKILLS: <span>Swimming, Espionage</span></p>
+                <p>STATUS: <span id="xanther-status">Available</span> </p>
+              </div>
+              <button onclick="dispatchXanther()" id="xantherButton">DISPATCH</button>
+            </div>
+          </div>
+          <div class="border-inset agent-bio">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident veritatis eius laborum voluptatem,
+              voluptatum ex illum porro molestiae labore ut iure voluptate consectetur quod quaerat quas natus beatae.
+              Voluptas, autem.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END Xanther agent-card -->
+
+      <!-- SECTION: Koko agent-card  -->
+      <div class="column">
+        <div id="koko" class="agent-card">
+          <div class="d-flex ">
+            <div class="agent-img border-inset">
+              <div>
+                <p>🦍</p>
+              </div>
+            </div>
+            <div class="agent-stats">
+              <div>
+                <p>NAME: <span>Koko</span> </p>
+                <p>AGE: <span>5</span></p>
+                <p>LOCATION: <span>EU</span></p>
+                <p>SKILLS: <span>Covert Ops, Piloting, Nunchucks</span></p>
+                <p>STATUS: <span id="koko-status">Available</span> </p>
+              </div>
+              <button onclick="dispatchKoko()" id="kokoButton">DISPATCH</button>
+            </div>
+          </div>
+          <div class="border-inset agent-bio">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident veritatis eius laborum voluptatem,
+              voluptatum ex illum porro molestiae labore ut iure voluptate consectetur quod quaerat quas natus beatae.
+              Voluptas, autem.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END Koko agent-card -->
+
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
