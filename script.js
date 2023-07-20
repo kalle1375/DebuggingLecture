@@ -124,7 +124,7 @@ function dispatchOslo() {
 // Our program is currently dispatching Xanther for a mission that he does not have the right skill set for! We need to fix this function to make sure it can read the required mission skills and check if they match Xanther's skills. If they do not match, we should get a console log stating that Xanther cannot be dispatched, and his agent card and status should not update. 
 
 function dispatchXanther() {
-  let missionSkills = "Swimming", "Espionage",
+  let missionSkills = "Swimming, Espionage"
   if(xanther.skills == missionSkills) {
     console.log("Xanther has been dispatched!")
     xanther.isDispatched = true
